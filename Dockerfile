@@ -7,7 +7,7 @@ FROM php:7.0-apache-jessie
 MAINTAINER Heimo Müller
 
 ENV SEEDDMS_VERSION=5.1.5
-ENV LUCENE_VERSION=1.1.13
+ENV LUCENE_VERSION=1.1.11
 ENV PREVIEW_VERSION=1.2.9
 
 RUN apt-get update && apt-get install -y apt-utils && apt-get install -my wget gnupg
