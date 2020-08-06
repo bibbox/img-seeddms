@@ -25,7 +25,7 @@ The BIBBOX framework can be installed
 
 After BIBBOX is up and running, you can use the [BIBBOX APP Store](http://bibbox.readthedocs.io/en/latest/admin-documentation/ "BIBBOX App Store") to install a lot of software tools. 
 
-## Docker Images in the Aoo
+## Docker Images in the App
  * [bibbox/seeddms](https://hub.docker.com/r/bibbox/seeddms/) 
  * [mariaDB](https://hub.docker.com/_/mariadb/), offical mariaDB container
  * [busybox](https://hub.docker.com/_/busybox/), offical data container
