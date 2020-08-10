@@ -55,9 +55,9 @@ rm seeddms*
 COPY configs/create_tables-innodb.sql /var/www/seeddms51x/install/create_tables-innodb.sql
 COPY configs/php.ini /usr/local/etc/php/
 COPY configs/000-default.conf /etc/apache2/sites-available/
-COPY configs/settings.xml /var/www/seeddms51x/conf/settings.xml
+COPY configs/settings.xml /var/www/seeddms51x/www/conf/settings.xml
 
 RUN chown -R www-data:www-data /var/www/seeddms51x/
 
-RUN touch /var/www/seeddms51x/conf/ENABLE_INSTALL_TOOL
+RUN touch /var/www/seeddms51x/www/conf/ENABLE_INSTALL_TOOL
 
