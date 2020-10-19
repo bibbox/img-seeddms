@@ -55,4 +55,6 @@ COPY configs/settings.xml /var/www/seeddms60x/conf/settings.xml
 RUN chown -R www-data:www-data /var/www/seeddms60x/
 
 RUN touch /var/www/seeddms60x/conf/ENABLE_INSTALL_TOOL
+RUN apt-get update
+RUN apt-get install nano
 
