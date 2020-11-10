@@ -60,4 +60,4 @@ COPY configs/settings.xml /var/www/seeddms51x/conf/settings.xml
 RUN chown -R www-data:www-data /var/www/seeddms51x/
 
 RUN touch /var/www/seeddms51x/conf/ENABLE_INSTALL_TOOL
-
+RUN service apache2 start
