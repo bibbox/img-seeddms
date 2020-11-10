@@ -56,4 +56,4 @@ RUN chown -R www-data:www-data /var/www/seeddms60x/
 
 RUN touch /var/www/seeddms60x/conf/ENABLE_INSTALL_TOOL
 
-
+RUN service apache2 start
