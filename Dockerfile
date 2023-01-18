@@ -10,7 +10,7 @@ ENV SEEDDMS_VERSION=6.0.11
 ENV LUCENE_VERSION=1.1.11
 ENV PREVIEW_VERSION=1.2.9
 
-RUN apt-get update && apt-get install -y --force-yes apt-utils && apt-get install -my wget gnupg
+RUN apt-get update && apt-get install -y --force-yes apt-utils && apt-get install -my --force-yes wget gnupg
 
 RUN echo 'deb http://packages.dotdeb.org jessie all' > /etc/apt/sources.list.d/dotdeb.list && \
     curl http://www.dotdeb.org/dotdeb.gpg | apt-key add -
