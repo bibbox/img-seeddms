@@ -10,11 +10,11 @@ ENV SEEDDMS_VERSION=6.0.19
 #ENV LUCENE_VERSION=1.1.11
 #ENV PREVIEW_VERSION=1.2.9
 
-RUN apt-get update && apt-get install -y apt-utils && apt-get install -my wget gnupg
+RUN apt-get update && apt-get install -y --force-yes apt-utils && apt-get install -my --force-yes wget gnupg
 
 #RUN rm /etc/apt/preferences.d/no-debian-php && \
 RUN    apt-get update && \
-    apt-get -q -y install \
+    apt-get -q -y --force-yes install \
         libpng-dev \
         imagemagick \
         libmcrypt-dev \
